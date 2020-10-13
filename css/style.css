@@ -1,0 +1,835 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  background-color: #f2f2f5;
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: 200;
+}
+/*Global Styles*/
+
+/*Box shadow*/
+.box-shadow {
+  box-shadow: 2px 3px 40px rgba(187, 184, 224, 0.26);
+  -webkit-box-shadow: 2px 3px 40px rgba(187, 184, 224, 0.26);
+  -moz-box-shadow: 2px 3px 40px rgba(187, 184, 224, 0.26);
+}
+
+/*Text Styling*/
+.headerdesc-one {
+  font-size: 24px;
+}
+.header-link {
+  font-size: 16px;
+  font-weight: 300;
+}
+.header-one {
+  font-size: 25px;
+}
+.header-two {
+  font-size: 22px;
+}
+.header-three {
+  font-size: 38px;
+}
+.header-four {
+  font-size: 34px;
+}
+.header-five {
+  font-size: 30px;
+}
+.header-six {
+  font-size: 50px;
+}
+
+/*Main-Navigation Styling*/
+#main-header {
+  background: #fff;
+  width: 100%;
+  position: relative;
+}
+#main-header ul li {
+  display: inline-block;
+}
+#main-header ul {
+  display: inline-block;
+}
+#main-header ul.logo {
+  width: 18%;
+  position: relative;
+}
+#main-header ul.logo img {
+  height: 60px;
+  position: absolute;
+  top: -35px;
+  left: 20px;
+}
+#main-header ul.headerlink {
+  width: 60%;
+  text-align: center;
+}
+#main-header ul.headerlink li a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #4f5f6f;
+  transition: border 0.2s ease-out;
+  padding: 30px 5px;
+  border-bottom: 3px solid #fff;
+}
+#main-header ul.headerlink li a:hover,
+#main-header ul li a.active {
+  color: #32e2ae;
+  border-color: #32e2ae;
+}
+#main-header ul.admin {
+  width: 18%;
+}
+#main-header ul .admin-name {
+  width: 40px;
+  height: 40px;
+  background: #32e2ae;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 100%;
+  color: #fff;
+}
+#main-header ul .arrow {
+  width: 10px;
+  margin-left: 5px;
+  display: none;
+}
+#main-header ul .notification {
+  margin-left: 10px;
+  position: relative;
+}
+#main-header ul .notification img {
+  width: 26px;
+  position: absolute;
+  top: -2px;
+  left: 5px;
+}
+#main-header ul .notification .notifier {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #00a0b9;
+  left: 25px;
+  border-radius: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+.hamburger {
+  display: none;
+}
+
+/*Savings Card Styling*/
+#body-wrap {
+  max-width: 900px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.card-white {
+  background: #fff;
+}
+.card-dark {
+  background: #1f2125;
+}
+.card-dark {
+  color: #fff;
+}
+.card-dark .card-content li p {
+  color: #fff;
+}
+.card-dark .card-content li p span {
+  color: #fff;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin: 50px 0;
+  width: 100%;
+  padding-bottom: 200px;
+}
+.card-content {
+  z-index: 2;
+  position: relative;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.card-content .naira {
+  width: 20px;
+  margin-left: -23px;
+  margin-top: 4px;
+}
+.card-content li {
+  position: relative;
+  margin-top: 25px;
+}
+.card-content li span {
+  display: inline-block;
+}
+.card-content li p {
+  margin-left: 20px;
+  color: #5f6971;
+}
+.card-content li p span {
+  margin-left: 30px;
+  color: #1f2125;
+}
+.card-content li p span.duration {
+  margin-left: 5px;
+}
+.card-content .bullet {
+  width: 12px;
+  height: 12px;
+  background: #5f6971;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+}
+.card-dark .card-content .bullet {
+  background-color: #00df86;
+}
+.card img {
+  position: absolute;
+  z-index: 1;
+}
+.shard1 {
+  top: -8%;
+  width: 70%;
+  left: -45%;
+}
+.shard2 {
+  width: 30%;
+  top: -2%;
+  right: -10%;
+}
+.piggy {
+  width: 30%;
+  top: 20%;
+  left: 5%;
+}
+
+/*Profile Styling*/
+#totalbalance {
+  text-align: center;
+  padding-top: 20px;
+}
+#totalbalance h2 {
+  color: #65e0b0;
+  font-weight: 200;
+  margin-top: 150px;
+}
+#totalbalance p {
+  font-weight: 100;
+  margin-top: 15px;
+  position: relative;
+}
+#totalbalance p span img {
+  position: absolute;
+  width: 25px;
+  left: 36%;
+  top: 20%;
+}
+
+.profilelink {
+  background: #fff;
+  color: #1f2125;
+  cursor: pointer;
+  padding: 30px 65px;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+.profilelink:nth-child(2),
+.profilelink:nth-child(3) {
+  margin-left: 12px;
+}
+.profilelink a {
+  color: #1f2125;
+  transition: color 0.1s ease-out;
+}
+.profilelink:hover a {
+  color: #65e0b0;
+}
+.profilelink .linkicon {
+  width: 35px;
+  left: 7%;
+  position: absolute;
+}
+.profilelink .linkchevron {
+  width: 15px;
+  position: absolute;
+  right: 10%;
+}
+
+.profile {
+  margin-top: 60px;
+}
+.profilecard {
+  position: relative;
+  padding: 110px 50px;
+  height: auto;
+}
+.profilecard p {
+  color: #1f2125;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.profile,
+.profiledetails {
+  display: inline-block;
+}
+.profile h1 {
+  margin-bottom: 60px;
+}
+.profilepic {
+  width: 25%;
+  border-radius: 100%;
+  background: #65e0b0;
+  overflow: hidden;
+}
+.profilepic img {
+  width: 100%;
+}
+.profiledetails {
+  width: 70%;
+  float: right;
+  position: absolute;
+  right: -7%;
+  top: 0;
+  padding: 80px 20px 20px 20px;
+}
+.profiledetails img {
+  width: 16px;
+  margin-left: -45px;
+}
+.email {
+  margin-top: 30px;
+}
+.address input,
+.email input {
+  width: 80%;
+  padding: 10px 20px;
+  border: 2px solid #c9f6e4;
+  border-radius: 40px;
+  color: #5a6c67;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.address input:focus,
+.email input:focus {
+  outline: none;
+}
+.updateinfo {
+  background: #32e2ae;
+  margin-top: 30px;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 6px;
+  color: #1f2125;
+}
+.updateinfo:hover {
+  background: #23eeb2;
+}
+
+.bank {
+  margin-top: 60px;
+}
+.bankcard {
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 80px 0;
+  margin-top: 60px;
+}
+.bankcard .content {
+  z-index: 5;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  text-align: center;
+  color: #32e2ae;
+}
+.bankshard {
+  position: absolute;
+  width: 80%;
+  top: -10%;
+  left: -48%;
+  z-index: 1;
+}
+.bankdetails {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding-left: 40%;
+}
+.bankdetails img {
+  width: 16px;
+  margin-left: -40px;
+}
+.bankdetails input {
+  width: 80%;
+  padding: 10px 20px;
+  border: 2px solid #c9f6e4;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  background: #1f2125;
+  outline: none;
+}
+.bankname p:first-child {
+  margin-top: -10px;
+}
+.bankdetails p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+  margin-top: 25px;
+}
+
+/*New Savings Stylings*/
+#new-savings {
+  padding-bottom: 0;
+}
+.amount {
+  padding: 70px 60px;
+}
+.amount-input {
+  padding: 10px 30px 10px 45px;
+  background: #ecf1f5;
+  border: none;
+  width: 55%;
+  margin-top: 30px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.amount-input:focus {
+  outline: none;
+}
+/*.duration{margin-top: 40px;}*/
+.select {
+  margin-top: 20px;
+}
+.select li:first-child {
+  margin-left: 0;
+}
+.select li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.select li a {
+  display: inline-block;
+  border: 3px solid #32e2ae;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #1f2125;
+  transition: background 0.1s ease-out;
+}
+.select li a:hover,
+.select li a.active {
+  background: #32e2ae;
+}
+.input-naira {
+  width: 20px;
+  margin-top: 45px;
+  margin-left: 16px;
+}
+#upper-card {
+  padding: 60px 50px 10px 50px;
+}
+
+/*Forms Styling*/
+.createaccount {
+  background: #f5f7f8;
+  padding: 40px 60px;
+  width: 70%;
+  margin: 20px auto;
+}
+.createaccount > p {
+  margin-bottom: 50px;
+}
+.forminput {
+  margin-top: 30px;
+}
+.forminput input {
+  padding: 20px 15px;
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+  border: 2px solid #eceff1;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.forminput input::placeholder {
+  color: #828795;
+  font-weight: 100;
+}
+.submit a {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 22px;
+  outline: none;
+  border: 0;
+  background: #45da7d;
+  color: #1b2128;
+  text-align: center;
+  transition: background 0.1s ease-out;
+}
+.submit a:hover {
+  background: #67e094;
+}
+/*.body-wrap{background: #478ccc;padding: 40px 0;}*/
+.body-wrap {
+  background: url(assets/form.svg);
+  padding: 40px 0;
+}
+.login {
+  text-align: center;
+  padding-top: 40px;
+}
+.login p a {
+  color: #45da7d;
+}
+
+/*Responsive Aspect*/
+
+@media screen and (max-width: 904px) {
+  .profilelink:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .piggy {
+    display: none;
+  }
+  .shard1 {
+    left: -20%;
+    top: 70%;
+    width: 60%;
+  }
+  .card-content {
+    margin-left: 8%;
+    margin-top: 15%;
+  }
+  #totalbalance p span img {
+    left: 32%;
+    top: 11%;
+  }
+  .profilelink {
+    width: 100%;
+  }
+  .profilelink:nth-child(2) {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  #main-header ul.headerlink {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .headerlink li {
+    display: block;
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+  }
+  .headerlink li a {
+    display: block;
+    width: 100%;
+  }
+  #main-header ul.logo {
+    width: 30%;
+  }
+  #main-header ul.logo img {
+    height: 60px;
+    position: relative;
+    top: 0;
+  }
+  #main-header ul.admin {
+    width: 30%;
+    text-align: center;
+    top: -18px;
+    position: relative;
+  }
+  #main-header ul .notification {
+    margin-left: 20px;
+  }
+  .hamburger {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    right: -25%;
+    bottom: 15px;
+    background: #32e2ae;
+    padding: 15px 0;
+    border-radius: 5px;
+  }
+  .hamburger img {
+    width: 30px;
+    margin-top: 2px;
+  }
+  .profiledetails {
+    float: none;
+    width: 100%;
+    position: relative;
+    left: 2%;
+    right: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .address input,
+  .email input {
+    width: 90%;
+  }
+  .profilecard {
+    padding: 30px 15px;
+  }
+  .profiledetails img {
+    margin-left: -35px;
+  }
+  .bankshard {
+    top: 78%;
+    left: 49%;
+  }
+  .bankdetails {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .bankdetails input {
+    width: 90%;
+  }
+  .half {
+    width: 100% !important;
+    float: none;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  .amount {
+    margin-bottom: 50px;
+  }
+  .amount-input {
+    width: 90%;
+  }
+  .select li {
+    display: inline-block;
+    margin-left: 0;
+    width: 30%;
+  }
+  .select li a {
+    display: inline-block;
+    width: 98%;
+    text-align: center;
+  }
+  .select li:nth-child(4) {
+    margin-top: 20px;
+  }
+  .content {
+    left: 55% !important;
+  }
+  .header-six {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #totalbalance p span img {
+    left: 33%;
+    top: 11%;
+  }
+  .amount {
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .header-six {
+    font-size: 30px;
+  }
+  #totalbalance p span img {
+    left: 27%;
+    top: 25%;
+  }
+  .createaccount {
+    padding: 40px 20px;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-two {
+    font-size: 18px;
+  }
+  .header-five {
+    font-size: 25px;
+  }
+  .bankcard .content {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: -55%;
+  }
+  .select li {
+    width: 45%;
+    margin-top: 20px;
+  }
+  .profilelink {
+    padding: 35px;
+  }
+  #new-savings .duration {
+    margin-top: 20px;
+  }
+  .card-content {
+    margin-left: 4%;
+  }
+  .card-content .bullet {
+    width: 10px;
+    height: 10px;
+  }
+  .profiledetails {
+    left: 0;
+  }
+  .address input,
+  .email input {
+    width: 98%;
+  }
+  #totalbalance p span img {
+    left: 23%;
+    top: 11%;
+  }
+  .lower-card {
+    padding: 60px 20px !important;
+  }
+  #main-header ul.logo {
+    width: 18%;
+  }
+  #main-header ul.logo img {
+    left: 0;
+    height: 55px;
+  }
+  #main-header ul.admin {
+    width: 40%;
+    top: -11px;
+  }
+  #main-header ul.headerlink li a {
+    margin-right: 0;
+  }
+  .hamburger {
+    width: 55px;
+    right: -22%;
+    bottom: 11px;
+  }
+  #main-header ul .notification {
+    margin-left: 8px;
+  }
+  #main-header ul.logo {
+    text-align: center;
+    padding: 5px 0;
+  }
+  #main-header ul.logo img {
+    top: 8px;
+  }
+  .createaccount {
+    padding: 40px 15px;
+    width: 100%;
+  }
+  .forminput input {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #totalbalance p span img {
+    left: 15%;
+    top: 11%;
+  }
+  .hamburger {
+    width: 52px;
+    right: -20%;
+    bottom: 11px;
+  }
+  #main-header ul .notification {
+    margin-left: 5px;
+  }
+  #main-header ul.logo {
+    text-align: center;
+    padding: 5px 0;
+  }
+  #main-header ul.logo img {
+    left: 0;
+    height: 50px;
+  }
+  #main-header ul .admin-name {
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    margin-right: 8px;
+  }
+}
+
+.padding-left {
+  padding-left: 20px;
+}
+.naira {
+  width: 20px;
+  margin-left: -25px;
+}
+.lower-card {
+  padding: 70px 60px;
+}
+.half {
+  width: 50%;
+  float: left;
+}
+.margin-top {
+  margin-top: 40px;
+}
+.margin-top-low {
+  margin-top: 20px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.fill {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background: #fff;
+  margin: 20px 0 0 20px;
+  padding: 20px;
+}
+.fill p {
+  margin-top: 20px;
+}
